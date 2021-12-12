@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, innitial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Jura&family=Manrope:wght@300&display=swap" rel="stylesheet">
+	<link href="">
+	<link rel="shortcut icon" href="img/logo/logo.png" type="image/png">
+	<title>Главная</title>
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span><img src="img/logo/logo.png" style="width: 20%"></span>
+		</div>
+
+		<div id="about">
+			<a href="index.html">Главная</a>
+			<a href="about.html">О корги</a>
+			<a href="gallery.html">Галерея</a>
+			<a href="care.html">Уход</a>
+			<a href="training.html">Дрессировка</a>
+			<a href="articles.html">Статьи</a>
+		</div>
+	</header>
+
+	<div id="top">
+		<h1>Специально для корги</h1>
+		<h3>и их хозяев!</h3>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h2>Коротко</h2>
+			<span>О главном</span>
+		</div>
+
+		<div class="text">
+			<span>Вельш-корги - собаки на коротких лапах, с удлинённым телом и со стоячими ушами. Напоминают лис благодаря хвосту. А из-за обводки вокруг глаз и рта кажутся улыбающимися. <a href="about.html">Читать далее...</a></span>
+		</div>
+	</div>
+
+	<div id="overview" >
+		<h2>Галерея</h2>
+		<h4>Смотрите красивые и весёлые картинки</h4>
+
+		<div class="img">
+      		<img src="img/1.jpg" alt="">
+    	</div>
+
+    	<div class="img">
+      		<img src="img/4.jpg" alt="">
+    	</div>
+
+    	<div class="img">
+      		<img src="img/5.jpg" alt="">
+    	</div>
+
+    	<div class="img">
+      		<img src="img/6.jpg" alt="">
+    	</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).on("scroll", function() {
+			if ($(window).scrollTop() === 0) {
+				$("header").removeClass("fixed");
+			}
+
+			else{
+				$("header").attr("class", "fixed");
+			}
+		});
+	</script>
+
+</body>
+</html>
